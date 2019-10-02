@@ -1,0 +1,60 @@
+
+
+<html>
+<head> This is my site </head>
+<title> Ali Khatab</title>
+
+<body>
+<p> I will try class in Javascript</p>
+
+<h2> My button will be here </h2>
+
+<button onclick="num()"> sort numerically</button>"
+
+<p class="nummbers"> </p>
+
+
+<script>
+
+let num = [2, 6, ,7,3,5];
+
+// Here you can see the reduce in JS  it is very nice try it please. 
+// I took class in this file insted of id 
+
+document.getElementsByClassName('nummbers')[0].innerHTML= num.reduce((acc, n) => acc + " abc " + n, ''); 
+
+function nums (){
+num.sort ((a, b) => {
+           return a-b
+        });
+        document.getElementsByClassName('nummbers')[0].innerHTML= num.reduce((acc, n) =>  acc + " | " + n, ''); ;       
+}
+nums()
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
